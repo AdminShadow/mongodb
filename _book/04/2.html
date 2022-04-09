@@ -1,0 +1,708 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第二节 PyMongo文档操作 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第一章 MongoDB相关概念
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../01/1.html">
+            
+                <a href="../01/1.html">
+            
+                    
+                    第一节 MongoDB的简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../01/2.html">
+            
+                <a href="../01/2.html">
+            
+                    
+                    第二节 MongoDB的单机部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第二章 MongoDB的基本操作
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02/1.html">
+            
+                <a href="../02/1.html">
+            
+                    
+                    第一节 数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02/2.html">
+            
+                <a href="../02/2.html">
+            
+                    
+                    第二节 集合操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02/3.html">
+            
+                <a href="../02/3.html">
+            
+                    
+                    第三节 文档基本CRUD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../02/4.html">
+            
+                <a href="../02/4.html">
+            
+                    
+                    第四节 文档的分页查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../02/5.html">
+            
+                <a href="../02/5.html">
+            
+                    
+                    第五节 文档的更多查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第三章 索引-Index
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../03/1.html">
+            
+                <a href="../03/1.html">
+            
+                    
+                    第一节 索引的概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../03/2.html">
+            
+                <a href="../03/2.html">
+            
+                    
+                    第二节 索引的类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../03/3.html">
+            
+                <a href="../03/3.html">
+            
+                    
+                    第三节 索引的管理操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../03/4.html">
+            
+                <a href="../03/4.html">
+            
+                    
+                    第四节 索引的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第四章 Python MongoDB
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    第一节 PyMongo和基本操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    第二节 PyMongo文档操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第二节 PyMongo文档操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4E8C;&#x3001;pymongo&#x6587;&#x6863;&#x64CD;&#x4F5C;">&#x4E8C;&#x3001;PyMongo&#x6587;&#x6863;&#x64CD;&#x4F5C;</h1>
+<h2 id="21-&#x63D2;&#x5165;&#x6587;&#x6863;">2.1 &#x63D2;&#x5165;&#x6587;&#x6863;</h2>
+<h3 id="211-&#x63D2;&#x5165;&#x96C6;&#x5408;">2.1.1 &#x63D2;&#x5165;&#x96C6;&#x5408;</h3>
+<p>&#x96C6;&#x5408;&#x4E2D;&#x63D2;&#x5165;&#x6587;&#x6863;&#x4F7F;&#x7528;<code>insert_one()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E00;&#x53C2;&#x6570;&#x662F;&#x5B57;&#x5178; <code>name =&gt; value</code> &#x5BF9;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+myclient = pymongo.MongoClient(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+mydb = myclient[<span class="hljs-string">&quot;articledb&quot;</span>]
+mycol = mydb[<span class="hljs-string">&quot;sites&quot;</span>]
+
+mydict = { <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;RUNOOB&quot;</span>, <span class="hljs-string">&quot;alexa&quot;</span>: <span class="hljs-string">&quot;10000&quot;</span>, <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://www.runoob.com&quot;</span> }
+
+x = mycol.insert_one(mydict) 
+print(x)    <span class="hljs-comment"># &lt;pymongo.results.InsertOneResult object at 0x10a34b288&gt;</span>
+</code></pre>
+<h3 id="212-&#x8FD4;&#x56DE;-id-&#x5B57;&#x6BB5;">2.1.2 &#x8FD4;&#x56DE; _id &#x5B57;&#x6BB5;</h3>
+<p><code>insert_one()</code>&#x65B9;&#x6CD5;&#x8FD4;&#x56DE; <code>InsertOneResult</code> &#x5BF9;&#x8C61;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x5305;&#x542B; <code>inserted_id</code> &#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x662F;&#x63D2;&#x5165;&#x6587;&#x6863;&#x7684;<code>id</code> &#x503C;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+myclient = pymongo.MongoClient(<span class="hljs-string">&apos;mongodb://localhost:27017/&apos;</span>)
+mydb = myclient[<span class="hljs-string">&apos;articledb&apos;</span>]
+mycol = mydb[<span class="hljs-string">&quot;sites&quot;</span>]
+
+mydict = { <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Google&quot;</span>, <span class="hljs-string">&quot;alexa&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>, <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://www.google.com&quot;</span> }
+x = mycol.insert_one(mydict)
+
+print(x.inserted_id)    <span class="hljs-comment"># 5b2369cac315325f3698a1cf</span>
+</code></pre>
+<h3 id="213-&#x63D2;&#x5165;&#x591A;&#x4E2A;&#x6587;&#x6863;">2.1.3 &#x63D2;&#x5165;&#x591A;&#x4E2A;&#x6587;&#x6863;</h3>
+<p>&#x96C6;&#x5408;&#x4E2D;&#x63D2;&#x5165;&#x591A;&#x4E2A;&#x6587;&#x6863;&#x4F7F;&#x7528;<code>insert_many()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E00;&#x53C2;&#x6570;&#x662F;&#x5B57;&#x5178;&#x5217;&#x8868;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+myclient = pymongo.MongoClient(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+mydb = myclient[<span class="hljs-string">&quot;articledb&quot;</span>]
+mycol = mydb[<span class="hljs-string">&quot;sites&quot;</span>]
+
+mylist = [
+      { <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Taobao&quot;</span>, <span class="hljs-string">&quot;alexa&quot;</span>: <span class="hljs-string">&quot;100&quot;</span>, <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://www.taobao.com&quot;</span> },
+      { <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;QQ&quot;</span>, <span class="hljs-string">&quot;alexa&quot;</span>: <span class="hljs-string">&quot;101&quot;</span>, <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://www.qq.com&quot;</span> },
+      { <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Facebook&quot;</span>, <span class="hljs-string">&quot;alexa&quot;</span>: <span class="hljs-string">&quot;10&quot;</span>, <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://www.facebook.com&quot;</span> },
+      { <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x77E5;&#x4E4E;&quot;</span>, <span class="hljs-string">&quot;alexa&quot;</span>: <span class="hljs-string">&quot;103&quot;</span>, <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://www.zhihu.com&quot;</span> },
+      { <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Github&quot;</span>, <span class="hljs-string">&quot;alexa&quot;</span>: <span class="hljs-string">&quot;109&quot;</span>, <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://www.github.com&quot;</span> }
+]
+x = mycol.insert_many(mylist)
+
+<span class="hljs-comment"># &#x8F93;&#x51FA;&#x63D2;&#x5165;&#x7684;&#x6240;&#x6709;&#x6587;&#x6863;&#x5BF9;&#x5E94;&#x7684; _id &#x503C;</span>
+print(x.inserted_ids)
+</code></pre>
+<p><code>insert_many()</code>&#x65B9;&#x6CD5;&#x8FD4;&#x56DE; <code>InsertManyResult</code> &#x5BF9;&#x8C61;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x5305;&#x542B; <code>inserted_ids</code> &#x5C5E;&#x6027;&#xFF0C;&#x8BE5;&#x5C5E;&#x6027;&#x4FDD;&#x5B58;&#x7740;&#x6240;&#x6709;&#x63D2;&#x5165;&#x6587;&#x6863;&#x7684; <code>id</code> &#x503C;&#x3002;</p>
+<h2 id="22-&#x67E5;&#x8BE2;&#x6587;&#x6863;">2.2 &#x67E5;&#x8BE2;&#x6587;&#x6863;</h2>
+<p>MongoDB &#x4E2D;&#x4F7F;&#x7528;&#x4E86; find &#x548C; find_one &#x65B9;&#x6CD5;&#x6765;&#x67E5;&#x8BE2;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5B83;&#x7C7B;&#x4F3C;&#x4E8E; SQL &#x4E2D;&#x7684;  SELECT &#x8BED;&#x53E5;&#x3002;</p>
+<h3 id="221-&#x67E5;&#x8BE2;&#x4E00;&#x6761;&#x6570;&#x636E;">2.2.1 &#x67E5;&#x8BE2;&#x4E00;&#x6761;&#x6570;&#x636E;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>find_one()</code>&#x65B9;&#x6CD5;&#x6765;&#x67E5;&#x8BE2;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x4E00;&#x6761;&#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+myclient = pymongo.MongoClient(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+mydb = myclient[<span class="hljs-string">&quot;articledb&quot;</span>]
+mycol = mydb[<span class="hljs-string">&quot;sites&quot;</span>]
+
+x = mycol.find_one()
+
+print(x)
+<span class="hljs-comment">#{&apos;_id&apos;:ObjectId(&apos;5b23696ac315325f269f28d1&apos;),&apos;name&apos;:&apos;RUNOOB&apos;,&apos;alexa&apos;:&apos;10000&apos;,&apos;url&apos;:&apos;https://www.runoob.com&apos;}</span>
+</code></pre>
+<h3 id="222-&#x67E5;&#x8BE2;&#x96C6;&#x5408;&#x4E2D;&#x6240;&#x6709;&#x6570;&#x636E;">2.2.2 &#x67E5;&#x8BE2;&#x96C6;&#x5408;&#x4E2D;&#x6240;&#x6709;&#x6570;&#x636E;</h3>
+<p><code>find()</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x67E5;&#x8BE2;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x7C7B;&#x4F3C; SQL &#x4E2D;&#x7684; <code>SELECT *</code>&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+myclient = pymongo.MongoClient(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+mydb = myclient[<span class="hljs-string">&quot;articledb&quot;</span>]
+mycol = mydb[<span class="hljs-string">&quot;sites&quot;</span>]
+
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> mycol.find():
+      print(x)
+<span class="hljs-string">&quot;&quot;&quot;
+{&apos;_id&apos;: ObjectId(&apos;5b23696ac315325f269f28d1&apos;),&apos;name&apos;:&apos;RUNOOB&apos;,&apos;alexa&apos;:&apos;10000&apos;,&apos;url&apos;:&apos;https://www.runoob.com&apos;}
+{&apos;_id&apos;: ObjectId(&apos;5b2369cac315325f3698a1cf&apos;), &apos;name&apos;: &apos;Google&apos;, &apos;alexa&apos;:&apos;1&apos;,&apos;url&apos;:&apos;https://www.google.com&apos;}
+{&apos;_id&apos;: ObjectId(&apos;5b236aa9c315325f5236bbb6&apos;), &apos;name&apos;: &apos;Taobao&apos;,&apos;alexa&apos;:&apos;100&apos;,&apos;url&apos;:&apos;https://www.taobao.com&apos;}
+{&apos;_id&apos;: ObjectId(&apos;5b236aa9c315325f5236bbb7&apos;), &apos;name&apos;: &apos;QQ&apos;, &apos;alexa&apos;: &apos;101&apos;, &apos;url&apos;: &apos;https://www.qq.com&apos;}
+{&apos;_id&apos;:ObjectId(&apos;5b236aa9c315325f5236bbb8&apos;),&apos;name&apos;:&apos;Facebook&apos;,&apos;alexa&apos;:&apos;10&apos;,&apos;url&apos;:&apos;https://www.facebook.com&apos;}
+{&apos;_id&apos;: ObjectId(&apos;5b236aa9c315325f5236bbb9&apos;), &apos;name&apos;: &apos;&#x77E5;&#x4E4E;&apos;, &apos;alexa&apos;: &apos;103&apos;, &apos;url&apos;: &apos;https://www.zhihu.com&apos;}
+{&apos;_id&apos;: ObjectId(&apos;5b236aa9c315325f5236bbba&apos;), &apos;name&apos;: &apos;Github&apos;,&apos;alexa&apos;:&apos;109&apos;,&apos;url&apos;:&apos;https://www.github.com&apos;}
+&quot;&quot;&quot;</span>
+</code></pre>
+<h3 id="223-&#x67E5;&#x8BE2;&#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x636E;">2.2.3 &#x67E5;&#x8BE2;&#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x636E;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>find()</code>&#x65B9;&#x6CD5;&#x6765;&#x67E5;&#x8BE2;&#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5C06;&#x8981;&#x8FD4;&#x56DE;&#x7684;&#x5B57;&#x6BB5;&#x5BF9;&#x5E94;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A; 1&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+myclient = pymongo.MongoClient(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+mydb = myclient[<span class="hljs-string">&quot;articledb&quot;</span>]
+mycol = mydb[<span class="hljs-string">&quot;sites&quot;</span>]
+
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> mycol.find({},{ <span class="hljs-string">&quot;_id&quot;</span>: <span class="hljs-number">0</span>, <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&quot;alexa&quot;</span>: <span class="hljs-number">1</span> }):
+      print(x)
+<span class="hljs-string">&quot;&quot;&quot;
+{&apos;name&apos;: &apos;RUNOOB&apos;, &apos;alexa&apos;: &apos;10000&apos;}
+{&apos;name&apos;: &apos;Google&apos;, &apos;alexa&apos;: &apos;1&apos;}
+{&apos;name&apos;: &apos;Taobao&apos;, &apos;alexa&apos;: &apos;100&apos;}
+{&apos;name&apos;: &apos;QQ&apos;, &apos;alexa&apos;: &apos;101&apos;}
+{&apos;name&apos;: &apos;Facebook&apos;, &apos;alexa&apos;: &apos;10&apos;}
+{&apos;name&apos;: &apos;&#x77E5;&#x4E4E;&apos;, &apos;alexa&apos;: &apos;103&apos;}
+{&apos;name&apos;: &apos;Github&apos;, &apos;alexa&apos;: &apos;109&apos;}
+&quot;&quot;&quot;</span>
+</code></pre>
+<h3 id="224-&#x6839;&#x636E;&#x6307;&#x5B9A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;">2.2.4 &#x6839;&#x636E;&#x6307;&#x5B9A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728; <code>find()</code>&#x4E2D;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;&#x6765;&#x8FC7;&#x6EE4;&#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+myclient = pymongo.MongoClient(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+mydb = myclient[<span class="hljs-string">&quot;articledb&quot;</span>]
+mycol = mydb[<span class="hljs-string">&quot;sites&quot;</span>]
+
+myquery = { <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&apos;Google&quot;</span> }
+mydoc = mycol.find(myquery)
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> mydoc:
+      print(x)
+</code></pre>
+<h3 id="225-&#x9AD8;&#x7EA7;&#x67E5;&#x8BE2;">2.2.5 &#x9AD8;&#x7EA7;&#x67E5;&#x8BE2;</h3>
+<p>&#x67E5;&#x8BE2;&#x7684;&#x6761;&#x4EF6;&#x8BED;&#x53E5;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4FEE;&#x9970;&#x7B26;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x5B9E;&#x4F8B;&#x7528;&#x4E8E;&#x8BFB;&#x53D6; <code>name</code> &#x5B57;&#x6BB5;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD; ASCII &#x503C;&#x5927;&#x4E8E; &quot;H&quot; &#x7684;&#x6570;&#x636E;&#xFF0C;&#x5927;&#x4E8E;&#x7684;&#x4FEE;&#x9970;&#x7B26;&#x6761;&#x4EF6;&#x4E3A;<code>{&quot;$gt&quot;: &quot;H&quot;}</code>:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+myclient = pymongo.MongoClient(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+mydb = myclient[<span class="hljs-string">&quot;articledb&quot;</span>]
+mycol = mydb[<span class="hljs-string">&quot;sites&quot;</span>]
+
+myquery = { <span class="hljs-string">&quot;name&quot;</span>: { <span class="hljs-string">&quot;$gt&quot;</span>: <span class="hljs-string">&quot;H&quot;</span> } }
+
+mydoc = mycol.find(myquery)
+
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> mydoc:
+      print(x)
+</code></pre>
+<h3 id="226-&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x6761;&#x6570;&#x8BB0;&#x5F55;">2.2.6 &#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x6761;&#x6570;&#x8BB0;&#x5F55;</h3>
+<p>&#x679C;&#x6211;&#x4EEC;&#x8981;&#x5BF9;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x8BBE;&#x7F6E;&#x6307;&#x5B9A;&#x6761;&#x6570;&#x7684;&#x8BB0;&#x5F55;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>limit()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x53EA;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+myclient = pymongo.MongoClient(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+mydb = myclient[<span class="hljs-string">&quot;articledb&quot;</span>]
+mycol = mydb[<span class="hljs-string">&quot;sites&quot;</span>]
+
+myresult = mycol.find().limit(<span class="hljs-number">3</span>)
+
+<span class="hljs-comment"># &#x8F93;&#x51FA;&#x7ED3;&#x679C;</span>
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> myresult:
+      print(x)
+</code></pre>
+<h2 id="23-&#x4FEE;&#x6539;&#x6587;&#x6863;">2.3 &#x4FEE;&#x6539;&#x6587;&#x6863;</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728; MongoDB &#x4E2D;&#x4F7F;&#x7528; <code>update_one()</code> &#x65B9;&#x6CD5;&#x4FEE;&#x6539;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x8BB0;&#x5F55;&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x67E5;&#x8BE2;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x5B57;&#x6BB5;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x67E5;&#x627E;&#x5230;&#x7684;&#x5339;&#x914D;&#x6570;&#x636E;&#x591A;&#x4E8E;&#x4E00;&#x6761;&#xFF0C;&#x5219;&#x53EA;&#x4F1A;&#x4FEE;&#x6539;&#x7B2C;&#x4E00;&#x6761;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x5B9E;&#x4F8B;&#x5C06; alexa &#x5B57;&#x6BB5;&#x7684;&#x503C; 10000 &#x6539;&#x4E3A; 12345:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+myclient = pymongo.MongoClient(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+mydb = myclient[<span class="hljs-string">&quot;articledb&quot;</span>]
+mycol = mydb[<span class="hljs-string">&quot;sites&quot;</span>]
+
+myquery = { <span class="hljs-string">&quot;alexa&quot;</span>: <span class="hljs-string">&quot;10000&quot;</span> }
+newvalues = { <span class="hljs-string">&quot;$set&quot;</span>: { <span class="hljs-string">&quot;alexa&quot;</span>: <span class="hljs-string">&quot;12345&quot;</span> } }
+
+mycol.update_one(myquery, newvalues)
+
+<span class="hljs-comment"># &#x8F93;&#x51FA;&#x4FEE;&#x6539;&#x540E;&#x7684;  &quot;sites&quot;  &#x96C6;&#x5408;</span>
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> mycol.find():
+      print(x)
+</code></pre>
+<p><code>update_one()</code>&#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x4FEE;&#x5339;&#x914D;&#x5230;&#x7684;&#x7B2C;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x4FEE;&#x6539;&#x6240;&#x6709;&#x5339;&#x914D;&#x5230;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>update_many()</code>&#x3002;</p>
+<h2 id="24-&#x6392;&#x5E8F;">2.4 &#x6392;&#x5E8F;</h2>
+<p><code>sort()</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x5347;&#x5E8F;&#x6216;&#x964D;&#x5E8F;&#x6392;&#x5E8F;&#x3002;</p>
+<p><code>sort()</code>&#x65B9;&#x6CD5;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x8981;&#x6392;&#x5E8F;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x5B57;&#x6BB5;&#x6307;&#x5B9A;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#xFF0C;<code>1</code>&#x4E3A;&#x5347;&#x5E8F;&#xFF0C;<code>-1</code> &#x4E3A;&#x964D;&#x5E8F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x5347;&#x5E8F;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+myclient = pymongo.MongoClient(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+mydb = myclient[<span class="hljs-string">&quot;articledb&quot;</span>]
+mycol = mydb[<span class="hljs-string">&quot;sites&quot;</span>]
+
+<span class="hljs-comment"># &#x5BF9;&#x5B57;&#x6BB5; alexa &#x6309;&#x5347;&#x5E8F;&#x6392;&#x5E8F;</span>
+mydoc = mycol.find().sort(<span class="hljs-string">&quot;alexa&quot;</span>)
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> mydoc:
+      print(x)
+</code></pre>
+<h2 id="25-&#x5220;&#x9664;&#x6570;&#x636E;">2.5 &#x5220;&#x9664;&#x6570;&#x636E;</h2>
+<h3 id="251-&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6587;&#x6863;">2.5.1 &#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6587;&#x6863;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>delete_one()</code>&#x65B9;&#x6CD5;&#x6765;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6587;&#x6863;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x67E5;&#x8BE2;&#x5BF9;&#x8C61;&#xFF0C;&#x6307;&#x5B9A;&#x8981;&#x5220;&#x9664;&#x54EA;&#x4E9B;&#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+myclient = pymongo.MongoClient(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+mydb = myclient[<span class="hljs-string">&quot;articledb&quot;</span>]
+mycol = mydb[<span class="hljs-string">&quot;sites&quot;</span>]
+
+myquery = { <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Taobao&quot;</span> }
+
+<span class="hljs-comment"># &#x5220;&#x9664; name &#x5B57;&#x6BB5;&#x503C;&#x4E3A; &quot;Taobao&quot; &#x7684;&#x6587;&#x6863;</span>
+mycol.delete_one(myquery)
+
+<span class="hljs-comment"># &#x5220;&#x9664;&#x540E;&#x8F93;&#x51FA;</span>
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> mycol.find():
+      print(x)
+</code></pre>
+<h3 id="252-&#x5220;&#x9664;&#x591A;&#x4E2A;&#x6587;&#x6863;">2.5.2 &#x5220;&#x9664;&#x591A;&#x4E2A;&#x6587;&#x6863;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>delete_many()</code>&#x65B9;&#x6CD5;&#x6765;&#x5220;&#x9664;&#x591A;&#x4E2A;&#x6587;&#x6863;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x67E5;&#x8BE2;&#x5BF9;&#x8C61;&#xFF0C;&#x6307;&#x5B9A;&#x8981;&#x5220;&#x9664;&#x54EA;&#x4E9B;&#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+myclient = pymongo.MongoClient(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+mydb = myclient[<span class="hljs-string">&quot;articledb&quot;</span>]
+mycol = mydb[<span class="hljs-string">&quot;sites&quot;</span>]
+
+myquery = { <span class="hljs-string">&quot;name&quot;</span>: {<span class="hljs-string">&quot;$regex&quot;</span>: <span class="hljs-string">&quot;^F&quot;</span>} }
+
+<span class="hljs-comment"># &#x5220;&#x9664;&#x6240;&#x6709; name &#x5B57;&#x6BB5;&#x4E2D;&#x4EE5; F &#x5F00;&#x5934;&#x7684;&#x6587;&#x6863;</span>
+x = mycol.delete_many(myquery)
+
+print(x.deleted_count, <span class="hljs-string">&quot;&#x4E2A;&#x6587;&#x6863;&#x5DF2;&#x5220;&#x9664;&quot;</span>)
+</code></pre>
+<h3 id="253-&#x5220;&#x9664;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6587;&#x6863;">2.5.3 &#x5220;&#x9664;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6587;&#x6863;</h3>
+<p><code>delete_many()</code> &#x65B9;&#x6CD5;&#x5982;&#x679C;&#x4F20;&#x5165;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;&#x67E5;&#x8BE2;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x4F1A;&#x5220;&#x9664;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6587;&#x6863;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+myclient = pymongo.MongoClient(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+mydb = myclient[<span class="hljs-string">&quot;articledb&quot;</span>]
+mycol = mydb[<span class="hljs-string">&quot;sites&quot;</span>]
+
+x = mycol.delete_many({})
+
+print(x.deleted_count, <span class="hljs-string">&quot;&#x4E2A;&#x6587;&#x6863;&#x5DF2;&#x5220;&#x9664;&quot;</span>)
+</code></pre>
+<h3 id="254-&#x5220;&#x9664;&#x96C6;&#x5408;">2.5.4 &#x5220;&#x9664;&#x96C6;&#x5408;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>drop()</code>&#x65B9;&#x6CD5;&#x6765;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+myclient = pymongo.MongoClient(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+mydb = myclient[<span class="hljs-string">&quot;articledb&quot;</span>]
+mycol = mydb[<span class="hljs-string">&quot;sites&quot;</span>]
+
+mycol.drop()
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 第一节 PyMongo和基本操作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第二节 PyMongo文档操作","level":"1.5.2","depth":2,"previous":{"title":"第一节 PyMongo和基本操作","level":"1.5.1","depth":2,"path":"04/1.md","ref":"04/1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"04/2.md","mtime":"2022-04-09T17:02:45.183Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-09T17:04:37.551Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
